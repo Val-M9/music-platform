@@ -27,8 +27,8 @@ export class TrackService {
     return tracks;
   }
 
-  async getAll(): Promise<Track[]> {
-    const tracks = await this.trackModel.find();
+  async getAll(count = 10, offset = 0): Promise<Track[]> {
+    const tracks = await this.trackModel.find().skip(offset).limit(count);
 
     return tracks;
   }
