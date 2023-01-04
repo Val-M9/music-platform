@@ -1,7 +1,7 @@
-import React from 'react';
+import { Layout } from '../components';
 
 const Index = () => {
-	return <div>Index</div>;
+	return <Layout></Layout>;
 };
 
 export default Index;
