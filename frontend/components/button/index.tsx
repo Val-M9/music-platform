@@ -12,4 +12,4 @@ const Button: FC<ButtonProps> = ({ icon, title, onClick, iconStyle }) => {
 	);
 };
 
-export default Button;
+export { Button };
