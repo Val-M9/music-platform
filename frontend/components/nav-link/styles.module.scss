@@ -1,0 +1,30 @@
+@import '../../public/css/colors.scss';
+
+.link {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 30px;
+  cursor: pointer;
+  
+  & p {
+    display: inherit;
+    align-self: flex-end;
+    padding-left: 20px;
+  }
+}
+
+.active {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: $violet-100;
+  
+  & p {
+    display: inherit;
+    align-self: flex-end;
+    padding-left: 20px;
+  }
+}

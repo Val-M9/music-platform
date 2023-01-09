@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Menu } from 'react-feather';
 import { Button } from '../';
 import { HeaderProps } from './types';
 import styles from './styles.module.scss';
@@ -7,8 +7,8 @@ import styles from './styles.module.scss';
 const Header: FC<HeaderProps> = ({ onOpenDrawer }) => {
 	return (
 		<header className={styles.header}>
-			<Button icon={faBars} iconStyle={styles.menuIcon} onClick={onOpenDrawer} />
-			<h1 className={styles.heading}>Header</h1>
+			<Button icon={<Menu />} onClick={onOpenDrawer} />
+			<h1 className={styles.heading}>MusicPlatform</h1>
 		</header>
 	);
 };

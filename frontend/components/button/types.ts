@@ -1,8 +1,7 @@
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { ReactElement } from 'react';
 
 export type ButtonProps = {
-	icon?: IconProp;
+	icon?: ReactElement;
 	title?: string;
-	iconStyle?: string;
 	onClick: () => void;
 };

@@ -2,10 +2,10 @@
 .drawerVisible {
   display: flex;
   margin-left: 240px;
-  transition-duration: 500ms;
+  transition-duration: 0.5s;
 }
 
 .drawerHidden {
   margin-left: 0;
-  transition-duration: 500ms;
+  transition-duration: 0.9s;
 }
