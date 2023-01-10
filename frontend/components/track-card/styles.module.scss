@@ -1,0 +1,96 @@
+@import '../../public/css/colors.scss';
+@import '../../public/css/quantities.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+  & .card {
+    display: flex;
+    margin-top: 30px;
+    width: 90%;
+    max-width: 800px;
+    height: 90px;
+    background-color: $green-300;
+    border: 1px solid $green-300;
+    border-radius: $radius-8;
+    box-shadow: 0px 0px 13px 2px $violet-500;
+    
+    @media (min-width: $bp-small) {
+      height: 100px;
+      width: 80%;
+    }
+  
+    & .content {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100%;
+      padding: 8px 12px;
+      
+      @media (min-width: $bp-small){
+        padding: 10px 20px;
+      }
+
+      & .trackInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+
+        & h4 {
+          font-size: $fs-12;
+          font-weight: $fw-medium;
+
+          @media (min-width: $bp-small){
+            font-size: $fs-16;
+          }
+        }
+
+        & p {
+          font-size: $fs-4;
+          font-weight: $fw-light;
+
+          @media (min-width: $bp-small){
+            font-size: $fs-6;
+            font-weight: $fw-regular;
+
+          }
+        }
+      }
+
+      & .picture {
+        width: 100%;
+        height: 100%;
+        max-width: 50px;
+        max-height: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border: 1px solid black;
+
+        @media (min-width: $bp-small) {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+
+      & .duration {
+        position: absolute;
+        right: 12px;
+        bottom: 8px;
+        font-size: $fs-2;
+        font-weight: $fw-light;
+
+        @media (min-width: $bp-small){
+          right: 20px;
+          bottom: 10px;
+          font-size: $fs-4;
+       }
+      }
+    }
+  }
+}

@@ -1,8 +1,12 @@
 import { FC } from 'react';
-import { Layout } from '../../components';
+import { Layout, TrackCard } from '../../components';
 
 const Tracks: FC = () => {
-	return <Layout>Tracks</Layout>;
+	return (
+		<Layout>
+			<TrackCard />
+		</Layout>
+	);
 };
 
 export default Tracks;
