@@ -1,7 +1,8 @@
-import { ReactElement } from 'react';
+import { Icon } from 'react-feather';
 
 export type ButtonProps = {
-	icon?: ReactElement;
+	Icon?: Icon;
 	title?: string;
+	variant?: 'rounded' | 'basic';
 	onClick: () => void;
 };

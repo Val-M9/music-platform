@@ -13,14 +13,16 @@
   background-color: $violet-500;
 
   & .heading {
-    font-size: $fs-24;
-
-    @media (max-width: $bp-medium) {
+    font-size: $fs-14;
+    font-weight: $fw-semi-bold;
+    
+    @media (min-width: $bp-small) {
       font-size: $fs-18;
     }
-
-    @media (max-width: $bp-small) {
-      font-size: $fs-14;
+    
+    @media (min-width: $bp-medium) {
+      font-size: $fs-24;
+      font-weight: $fw-bold;
     }
   }
 }

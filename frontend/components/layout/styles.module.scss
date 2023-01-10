@@ -1,10 +1,16 @@
+@import '../../public/css/quantities.scss';
+
 .drawerVisible {
   display: flex;
-  margin-left: 240px;
   transition-duration: 0.5s;
+  
+  @media (min-width: $bp-small) {
+    margin-left: 240px;
+  }
 }
 
 .drawerHidden {
+  display: flex;
   margin-left: 0;
   transition-duration: 0.9s;
 }

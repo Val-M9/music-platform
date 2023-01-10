@@ -1,7 +1,8 @@
 import { ReactElement } from 'react';
+import { Icon } from 'react-feather';
 
 export type LinkProps = {
-	icon?: ReactElement;
+	Icon?: Icon;
 	title: string;
 	onClick: () => void;
 	href: string;

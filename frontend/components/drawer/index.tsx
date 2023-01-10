@@ -15,15 +15,15 @@ const DrawerMenu = React.forwardRef<HTMLDivElement, DrawerProps>((props, ref) =>
 			}`}
 			ref={ref}
 		>
-			{menuItems.map((item) => (
+			{menuItems.map(({ anchor, title, icon }) => (
 				<NavLink
-					key={item.anchor}
+					key={anchor}
 					onClick={() => {
-						router.push(item.anchor);
+						router.push(anchor);
 					}}
-					title={item.title}
-					icon={<item.icon />}
-					href={item.anchor}
+					title={title}
+					Icon={icon}
+					href={anchor}
 				/>
 			))}
 		</div>
