@@ -1,4 +1,3 @@
-import { Icon } from 'react-feather';
 import { ReactElement } from 'react';
 
 export type LinkProps = {
