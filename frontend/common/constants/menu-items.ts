@@ -1,4 +1,5 @@
 import { Home, Icon, Music, List } from 'react-feather/';
+import { Routes } from '../enums';
 
 type MenuItems = {
 	title: string;
@@ -7,7 +8,7 @@ type MenuItems = {
 }[];
 
 export const menuItems: MenuItems = [
-	{ title: 'Main', anchor: '/', icon: Home },
-	{ title: 'Tracks', anchor: '/tracks', icon: Music },
-	{ title: 'Albums', anchor: '/albums', icon: List },
+	{ title: 'Main', anchor: Routes.MAIN, icon: Home },
+	{ title: 'Tracks', anchor: Routes.TRACKS, icon: Music },
+	{ title: 'Albums', anchor: Routes.ALBUMS, icon: List },
 ];

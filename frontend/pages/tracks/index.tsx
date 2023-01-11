@@ -1,6 +1,9 @@
+import { useRouter } from 'next/router';
 import { FC } from 'react';
+import { Routes } from '../../common/enums';
 import { Track } from '../../common/types';
-import { Layout, TrackList } from '../../components';
+import { Button, Layout, TrackList } from '../../components';
+import styles from './styles.module.scss';
 
 const tracks: Track[] = [
 	{
@@ -36,9 +39,23 @@ const tracks: Track[] = [
 ];
 
 const Tracks: FC = () => {
+	const router = useRouter();
+
 	return (
 		<Layout>
-			<TrackList tracks={tracks} />
+			<div className={styles.wrapper}>
+				<div className={styles.top}>
+					<h2>List Of Tracks</h2>
+					<Button
+						onClick={() => router.push(Routes.CREATE_TRACK)}
+						title='Create Track'
+						variant='outlined'
+					/>
+				</div>
+				<div className={styles.listWrapper}>
+					<TrackList tracks={tracks} />
+				</div>
+			</div>
 		</Layout>
 	);
 };
