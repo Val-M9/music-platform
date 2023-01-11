@@ -9,8 +9,13 @@
   width: 160px;
   background-color: $green-400;
   z-index: 1;
+  box-shadow: 2px 0px 10px $violet-500;
   
   @media (min-width: $bp-small) {
+    width: 190px;
+  }
+
+  @media (min-width: $bp-medium) {
     width: 240px;
   }
 }
@@ -27,6 +32,10 @@
   transition: all 0.5s ease-in-out;
   
   @media (min-width: $bp-small) {
+    transform: translateX(-190px);
+  }
+
+  @media (min-width: $bp-medium) {
     transform: translateX(-240px);
   }
 }

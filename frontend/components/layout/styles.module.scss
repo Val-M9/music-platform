@@ -5,6 +5,10 @@
   transition-duration: 0.5s;
   
   @media (min-width: $bp-small) {
+    margin-left: 190px;
+  }
+
+  @media (min-width: $bp-medium) {
     margin-left: 240px;
   }
 }

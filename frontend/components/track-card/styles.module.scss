@@ -1,87 +1,100 @@
 @import '../../public/css/colors.scss';
 @import '../../public/css/quantities.scss';
 
-.wrapper {
+.card {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  margin-top: 30px;
+  width: 95%;
+  max-width: 800px;
+  height: 90px;
+  background-color: $green-300;
+  border: 1px solid $green-300;
+  border-radius: $radius-8;
+  box-shadow: 0px 0px 13px 2px $violet-500;
   
-  & .card {
+  @media (min-width: $bp-medium) {
+    height: 100px;
+    width: 80%;
+  }
+
+  & .content {
+    position: relative;
     display: flex;
-    margin-top: 30px;
-    width: 90%;
-    max-width: 800px;
-    height: 90px;
-    background-color: $green-300;
-    border: 1px solid $green-300;
-    border-radius: $radius-8;
-    box-shadow: 0px 0px 13px 2px $violet-500;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    padding: 8px 10px;
     
-    @media (min-width: $bp-small) {
-      height: 100px;
-      width: 80%;
+    @media (min-width: $bp-small){
+      padding: 10px 20px;
     }
-  
-    & .content {
-      position: relative;
+    
+    & .trackInfo {
       display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: center;
-      width: 100%;
-      padding: 8px 12px;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-shrink: 3;
+      height: 100%;
+      max-width: 500px;
+      width: 40%;
+
+      @media (min-width: $bp-small) {
+        width: 50%;
+      }
+
+      @media (min-width: $bp-medium) {
+        width: 60%;
+      }
       
-      @media (min-width: $bp-small){
-        padding: 10px 20px;
-      }
+      & h4 {
+        font-size: $fs-8;
+        font-weight: $fw-medium;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 
-      & .trackInfo {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 100%;
-
-        & h4 {
-          font-size: $fs-12;
-          font-weight: $fw-medium;
-
-          @media (min-width: $bp-small){
-            font-size: $fs-16;
-          }
-        }
-
-        & p {
-          font-size: $fs-4;
-          font-weight: $fw-light;
-
-          @media (min-width: $bp-small){
-            font-size: $fs-6;
-            font-weight: $fw-regular;
-
-          }
+        @media (min-width: $bp-small){
+          font-size: $fs-16;
         }
       }
 
-      & .picture {
-        width: 100%;
-        height: 100%;
+      & p {
+        font-size: $fs-4;
+        font-weight: $fw-light;
+        @media (min-width: $bp-small){
+          font-size: $fs-6;
+          font-weight: $fw-regular;
+        }
+      }
+    }
+
+    & .picture {
+      width: 100%;
+      height: 100%;
+      margin-left: 10px;
+      margin-right: 10px;
+      max-width: 40px;
+      max-height: 40px;
+      object-fit: cover;
+
+      @media (min-width: $bp-small) {
+        margin-left: 20px;
+        margin-right: 20px;
         max-width: 50px;
         max-height: 50px;
-        margin-left: 15px;
-        margin-right: 15px;
-        border: 1px solid black;
-
-        @media (min-width: $bp-small) {
-          margin-left: 20px;
-          margin-right: 20px;
-        }
       }
+    }
 
+    & .additional {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: end;
+      margin-left: auto;
+      height: 100%;
+      
       & .duration {
-        position: absolute;
-        right: 12px;
-        bottom: 8px;
         font-size: $fs-2;
         font-weight: $fw-light;
 
