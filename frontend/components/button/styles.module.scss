@@ -17,24 +17,28 @@
   font-size: $fs-4;
   font-weight: $fw-regular;
 
-  @media (min-width: $bp-small) {
+  @media (min-width: $bp-medium) {
     font-size: $fs-6;
-    font-weight: $fw-medium;
+    font-weight: $fw-semi-bold;
   }
 
   & .icon {
     width: 16px;
     height: 16px;
 
-    @media (min-width: $bp-small) {
+    @media (min-width: $bp-medium) {
       width: 20px;
       height: 20px;
     }
 
-    @media (min-width: $bp-medium) {
+    @media (min-width: $bp-large) {
       width: 24px;
       height: 24px;
     }
+  }
+
+  & .withIcon {
+    padding-left: 5px;
   }
 
   &[data-variant='rounded'] {
@@ -45,20 +49,20 @@
     border: 1px solid $violet-200;
     border-radius: $radius-50;
 
-    @media (min-width: $bp-small) {
+    @media (min-width: $bp-medium) {
       width: 40px;
       height: 40px;
       padding: 8px;
     }
 
-    @media (min-width: $bp-medium) {
+    @media (min-width: $bp-large) {
       width: 50px;
       height: 50px;
       padding: 10px;
     }
   }
 
-  &[data-variant='outlined'] {
+  &[data-variant='filled'] {
     width: fit-content;
     padding: 5px 8px;
     color: $green-700;
@@ -68,10 +72,11 @@
     box-shadow: 0px 0px 5px 2px $violet-200;
 
     &:hover {
+      background-color: $violet-50;
       box-shadow: 0px 0px 2px $violet-100;
     }
 
-    @media (min-width: $bp-small) {
+    @media (min-width: $bp-medium) {
       padding: 18px 14px;
     }
   }
