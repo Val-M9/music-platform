@@ -25,13 +25,11 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 	};
 
 	return (
-		<main>
-			<section className={`${styles.mainWrapper} `}>
-				<DrawerMenu isDrawerOpen={isDrawerOpen} ref={ref} />
-				<Header onOpenDrawer={handleOpenDrawer} />
-				<div className={`${isDrawerOpen ? styles.drawerVisible : styles.drawerHidden}`}>
-					{children}
-				</div>
+		<main className={styles.mainWrapper}>
+			<DrawerMenu isDrawerOpen={isDrawerOpen} ref={ref} />
+			<Header onOpenDrawer={handleOpenDrawer} />
+			<section className={`${isDrawerOpen ? styles.drawerVisible : styles.drawerHidden}`}>
+				{children}
 			</section>
 		</main>
 	);
