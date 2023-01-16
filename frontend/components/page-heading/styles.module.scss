@@ -1,0 +1,27 @@
+@import '../../public/css/quantities';
+
+.heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 50px 0px 10px 0px;
+  max-width: 900px;
+  width: 95%;
+  
+  @media (min-width: $bp-large) {
+    width: 80%;
+  }
+  
+  & h2 {
+    font-size: $fs-16;
+    font-weight: $fw-semi-bold;
+    
+    @media (min-width: $bp-medium) {
+      font-size: $fs-20;
+    }
+  }
+}
+
+.withBtn {
+  justify-content: space-between;
+}
