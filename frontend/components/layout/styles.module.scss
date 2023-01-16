@@ -1,20 +1,28 @@
 @import '../../public/css/quantities.scss';
 
-.drawerVisible {
+.mainWrapper {
+  position: relative;
   display: flex;
-  transition-duration: 0.5s;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  & .drawerVisible {
+    display: flex;
+    transition-duration: 0.5s;
+    
+    @media (min-width: $bp-medium) {
+      margin-left: 190px;
+    }
   
-  @media (min-width: $bp-small) {
-    margin-left: 190px;
+    @media (min-width: $bp-large) {
+      margin-left: 240px;
+    }
   }
-
-  @media (min-width: $bp-medium) {
-    margin-left: 240px;
+  
+  & .drawerHidden {
+    display: flex;
+    margin-left: 0;
+    transition-duration: 0.9s;
   }
-}
-
-.drawerHidden {
-  display: flex;
-  margin-left: 0;
-  transition-duration: 0.9s;
 }

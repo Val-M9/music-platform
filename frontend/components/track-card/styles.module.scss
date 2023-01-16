@@ -4,17 +4,18 @@
 .card {
   display: flex;
   margin-top: 30px;
-  width: 95%;
+  width: 100%;
   max-width: 900px;
   height: 90px;
   background-color: $green-300;
   border: 1px solid $green-300;
   border-radius: $radius-8;
   box-shadow: 0px 0px 13px 2px $violet-500;
+  cursor: pointer;
   
-  @media (min-width: $bp-medium) {
+  @media (min-width: $bp-large) {
     height: 100px;
-    width: 80%;
+    width: 100%;
   }
 
   & .content {
@@ -26,7 +27,7 @@
     width: 100%;
     padding: 8px 10px;
     
-    @media (min-width: $bp-small){
+    @media (min-width: $bp-medium){
       padding: 10px 20px;
     }
     
@@ -34,16 +35,15 @@
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      flex-shrink: 3;
       height: 100%;
       max-width: 500px;
       width: 40%;
 
-      @media (min-width: $bp-small) {
+      @media (min-width: $bp-medium) {
         width: 50%;
       }
 
-      @media (min-width: $bp-medium) {
+      @media (min-width: $bp-large) {
         width: 60%;
       }
       
@@ -54,15 +54,15 @@
         text-overflow: ellipsis;
         white-space: nowrap;
 
-        @media (min-width: $bp-small){
-          font-size: $fs-16;
+        @media (min-width: $bp-medium){
+          font-size: $fs-12 ;
         }
       }
 
       & p {
         font-size: $fs-4;
         font-weight: $fw-light;
-        @media (min-width: $bp-small){
+        @media (min-width: $bp-medium){
           font-size: $fs-6;
           font-weight: $fw-regular;
         }
@@ -78,7 +78,7 @@
       max-height: 40px;
       object-fit: cover;
 
-      @media (min-width: $bp-small) {
+      @media (min-width: $bp-medium) {
         margin-left: 20px;
         margin-right: 20px;
         max-width: 50px;
@@ -90,7 +90,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: end;
+      align-items: flex-end;
       margin-left: auto;
       height: 100%;
       
@@ -98,7 +98,7 @@
         font-size: $fs-2;
         font-weight: $fw-light;
 
-        @media (min-width: $bp-small){
+        @media (min-width: $bp-medium){
           right: 20px;
           bottom: 10px;
           font-size: $fs-4;

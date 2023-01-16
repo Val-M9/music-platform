@@ -16,11 +16,11 @@
     font-size: $fs-14;
     font-weight: $fw-semi-bold;
     
-    @media (min-width: $bp-small) {
+    @media (min-width: $bp-medium) {
       font-size: $fs-18;
     }
     
-    @media (min-width: $bp-medium) {
+    @media (min-width: $bp-large) {
       font-size: $fs-24;
       font-weight: $fw-bold;
     }

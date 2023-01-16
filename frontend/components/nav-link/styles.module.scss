@@ -10,7 +10,7 @@
   font-weight: $fw-light;
   cursor: pointer;
 
-  @media (min-width: $bp-small) {
+  @media (min-width: $bp-medium) {
     margin-top: 40px;
     margin-left: 30px;
     font-size: $fs-8;
@@ -32,7 +32,7 @@
       width: 20px;
       height: 20px;
 
-      @media (min-width: $bp-small) {
+      @media (min-width: $bp-medium) {
         width: 24px;
         height: 24px;
       }
