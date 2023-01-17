@@ -5,7 +5,7 @@ import styles from './styles.module.scss';
 
 const PageHeading: FC<PageHeadingProps> = ({ onClick, heading, title, variant, Icon }) => {
 	return (
-		<div className={`${styles.heading} ${onClick ? styles.withBtn : ''}`}>
+		<div className={`${styles.heading} ${onClick ? styles.headingWithBtn : ''}`}>
 			<h2>{heading}</h2>
 			{onClick && <Button onClick={onClick} title={title} variant={variant} Icon={Icon} />}
 		</div>

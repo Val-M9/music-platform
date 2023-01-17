@@ -7,7 +7,7 @@
   max-width: 1440px;
   margin: 0 auto;
 
-  & .drawerVisible {
+  .drawerVisible {
     display: flex;
     transition-duration: 0.5s;
     
@@ -20,7 +20,7 @@
     }
   }
   
-  & .drawerHidden {
+  .drawerHidden {
     display: flex;
     margin-left: 0;
     transition-duration: 0.9s;

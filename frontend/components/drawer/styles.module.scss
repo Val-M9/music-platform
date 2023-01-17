@@ -28,15 +28,7 @@
 
 .drawerHidden {
   visibility: hidden;
-  transform: translateX(-160px);
+  transform: translateX(-500px);
   transition: all 0.5s ease-in-out;
-  opacity: 0.1;
-  
-  @media (min-width: $bp-medium) {
-    transform: translateX(-190px);
-  }
-
-  @media (min-width: $bp-large) {
-    transform: translateX(-240px);
-  }
+  opacity: 0;
 }

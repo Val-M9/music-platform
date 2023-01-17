@@ -18,17 +18,17 @@
 
   }
   
-  & p {
+  p {
     display: inherit;
     align-items: center;
 
-    & span {
+    span {
       display: inherit;
       align-self: flex-end;
       padding-left: 20px;
     }
 
-    & .icon {
+    .icon {
       width: 20px;
       height: 20px;
 
@@ -38,8 +38,8 @@
       }
     }
   }
-}
 
-.active {
-  color: $violet-100;
+  &Active {
+    color: $violet-100;
+  }
 }

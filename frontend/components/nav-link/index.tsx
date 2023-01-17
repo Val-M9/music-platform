@@ -8,7 +8,7 @@ const NavLink: FC<LinkProps> = ({ Icon, title, onClick, href }) => {
 	const isActive = router.pathname === href;
 
 	return (
-		<div onClick={onClick} className={`${styles.link} ${isActive ? styles.active : ''}`}>
+		<div onClick={onClick} className={`${styles.link} ${isActive ? styles.linkActive : ''}`}>
 			<p>
 				{Icon && <Icon className={styles.icon} />}
 				<span>{title}</span>

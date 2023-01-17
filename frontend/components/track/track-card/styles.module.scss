@@ -1,5 +1,5 @@
-@import '../../public/css/colors.scss';
-@import '../../public/css/quantities.scss';
+@import '../../../public/css/colors.scss';
+@import '../../../public/css/quantities.scss';
 
 .card {
   display: flex;
@@ -18,8 +18,7 @@
     width: 100%;
   }
 
-  & .content {
-    position: relative;
+  .content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -30,46 +29,8 @@
     @media (min-width: $bp-medium){
       padding: 10px 20px;
     }
-    
-    & .trackInfo {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      height: 100%;
-      max-width: 500px;
-      width: 40%;
 
-      @media (min-width: $bp-medium) {
-        width: 50%;
-      }
-
-      @media (min-width: $bp-large) {
-        width: 60%;
-      }
-      
-      & h4 {
-        font-size: $fs-8;
-        font-weight: $fw-medium;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-
-        @media (min-width: $bp-medium){
-          font-size: $fs-12 ;
-        }
-      }
-
-      & p {
-        font-size: $fs-4;
-        font-weight: $fw-light;
-        @media (min-width: $bp-medium){
-          font-size: $fs-6;
-          font-weight: $fw-regular;
-        }
-      }
-    }
-
-    & .picture {
+    img {
       width: 100%;
       height: 100%;
       margin-left: 10px;
@@ -85,8 +46,46 @@
         max-height: 50px;
       }
     }
+    
+    .trackInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      max-width: 500px;
+      width: 40%;
 
-    & .additional {
+      @media (min-width: $bp-medium) {
+        width: 50%;
+      }
+
+      @media (min-width: $bp-large) {
+        width: 60%;
+      }
+      
+      h4 {
+        font-size: $fs-8;
+        font-weight: $fw-medium;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @media (min-width: $bp-medium){
+          font-size: $fs-12 ;
+        }
+      }
+
+      p {
+        font-size: $fs-4;
+        font-weight: $fw-light;
+        @media (min-width: $bp-medium){
+          font-size: $fs-6;
+          font-weight: $fw-regular;
+        }
+      }
+    }
+
+    .additional {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -94,7 +93,7 @@
       margin-left: auto;
       height: 100%;
       
-      & .duration {
+      .duration {
         font-size: $fs-2;
         font-weight: $fw-light;
 
