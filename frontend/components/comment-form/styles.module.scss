@@ -1,0 +1,13 @@
+@import '../../public/css/colors.scss';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 40px 0;
+
+  .submitBtn {
+    margin-top: 25px;
+    align-self: flex-end;
+  }
+}

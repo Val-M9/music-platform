@@ -1,0 +1,48 @@
+@import '../../public/css/colors.scss';
+@import '../../public/css/quantities.scss';
+
+.input {
+	margin-top: 25px;
+	padding: 8px 20px;
+	width: 100%;
+	height: 40px;
+	color: $white;
+	font: inherit;
+	font-size: $fs-6;
+	background-color: $green-400;
+	outline: none;
+	border: 1px solid $green-600;
+	border-radius: $radius-6;
+	box-shadow: 0px 0px 7px $green-600 inset;
+
+	&::placeholder {
+		color: $light-gray;
+	}
+
+	&:focus {
+		border-color: $violet-100;
+	}
+
+	@media (min-width: $bp-small) {
+		height: 50px;
+	}
+
+	@media (min-width: $bp-medium) {
+		height: 55px;
+		font-size: $fs-10;
+	}
+
+	&TextArea {
+		height: 90px;
+		resize: none;
+
+		@media (min-width: $bp-small) {
+			height: 120px;
+		}
+
+		@media (min-width: $bp-medium) {
+			height: 150px;
+			font-size: $fs-10;
+		}
+	}
+}
