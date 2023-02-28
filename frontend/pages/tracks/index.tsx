@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { FC } from 'react';
 import { Routes } from '../../common/enums';
 import { Track } from '../../common/types';
-import { Button, Layout, PageHeading, TrackList } from '../../components';
+import { Layout, PageHeading, TrackList } from '../../components';
 import styles from './styles.module.scss';
 
 const tracks: Track[] = [

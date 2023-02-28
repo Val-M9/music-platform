@@ -1,59 +1,84 @@
 @import './colors.scss';
+@import './quantities.scss';
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scrollbar-width: thin;
+	scrollbar-color: $green-300 $green-600;
+
+	&::-webkit-scrollbar {
+		width: 12px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: $green-600;
+		border-radius: $radius-6;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: $green-300;
+		border-radius: 20px;
+		border: 3px solid $green-600;
+
+		&:active {
+			background-color: $green-100;
+		}
+
+		&:hover {
+			background-color: $green-100;
+		}
+	}
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
-  color: $white;
-  background-color: $green-500;
-  font-family: Fixel, sans-serif;
-  font-feature-settings: 'salt', 'ss01';
-  line-height: 1.5;
-}
-
-*:before, *:after {
-  box-sizing: inherit;
+	color: $white;
+	background-color: $green-500;
+	font-family: Fixel, sans-serif;
+	font-feature-settings: 'salt', 'ss01';
+	line-height: 1.5;
 }
 
 @font-face {
-  font-family: Fixel;
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/MacPawFixelText-Light.woff2') format('woff2'),
-      url('../fonts/MacPawFixelText-Light.ttf') format('ttf')
+	font-family: Fixel;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/MacPawFixelText-Light.woff2') format('woff2'),
+		url('../fonts/MacPawFixelText-Light.ttf') format('ttf');
 }
 
 @font-face {
-  font-family: Fixel;
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/MacPawFixelText-Regular.woff2') format('woff2'),
-      url('../fonts/MacPawFixelText-Regular.ttf') format('ttf')
+	font-family: Fixel;
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/MacPawFixelText-Regular.woff2') format('woff2'),
+		url('../fonts/MacPawFixelText-Regular.ttf') format('ttf');
 }
 
 @font-face {
-  font-family: Fixel;
-  font-style: normal;
-  font-weight: 500;
-  src: url('../fonts/MacPawFixelText-Medium.woff2') format('woff2'),
-      url('../fonts/MacPawFixelText-Medium.ttf') format('ttf')
+	font-family: Fixel;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/MacPawFixelText-Medium.woff2') format('woff2'),
+		url('../fonts/MacPawFixelText-Medium.ttf') format('ttf');
 }
 
 @font-face {
-  font-family: Fixel;
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/MacPawFixelText-SemiBold.woff2') format('woff2'),
-      url('../fonts/MacPawFixelText-SemiBold.ttf') format('ttf')
+	font-family: Fixel;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../fonts/MacPawFixelText-SemiBold.woff2') format('woff2'),
+		url('../fonts/MacPawFixelText-SemiBold.ttf') format('ttf');
 }
 
 @font-face {
-  font-family: Fixel;
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/MacPawFixelText-Bold.woff2') format('woff2'),
-      url('../fonts/MacPawFixelText-Bold.ttf') format('ttf')
+	font-family: Fixel;
+	font-style: normal;
+	font-weight: 700;
+	src: url('../fonts/MacPawFixelText-Bold.woff2') format('woff2'),
+		url('../fonts/MacPawFixelText-Bold.ttf') format('ttf');
 }
