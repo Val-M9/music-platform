@@ -8,3 +8,4 @@ export { TrackList } from './track/track-list';
 export { PageHeading } from './page-heading';
 export { CommentForm } from './comment-form';
 export { Input, TextArea } from './input';
+export { TrackDetails } from './track/track-details';

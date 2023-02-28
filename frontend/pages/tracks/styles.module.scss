@@ -1,74 +1,26 @@
 @import '../../public/css/quantities.scss';
-@import '../../public/css/colors.scss';
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  padding: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 20px;
 
-  @media (min-width: $bp-medium) {
-    padding: 40px 40px;
-  }
+	@media (min-width: $bp-medium) {
+		padding: 40px 40px;
+	}
 
-  & .listWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.infoWrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 40px;
-
-  & img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: $radius-4;
-    box-shadow: 0px 0px 10px 2px $violet-300;
-
-    @media (min-width: $bp-medium) {
-      width: 300px;
-      height: 300px;
-    }
-
-    @media (min-width: $bp-large) {
-      width: 350px;
-      height: 350px;
-    }
-  }
-
-  & .infoContent {
-    align-self: baseline;
-    
-    & h3 {
-      padding-top: 30px;
-      padding-bottom: 20px;
-      font-size: $fs-12;
-      font-weight: $fw-semi-bold;
-    }
-
-    & p {
-      padding-bottom: 12px;
-      font-size: $fs-6;
-      font-weight: $fw-regular;
-
-      & span {
-        color: $light-gray;
-      }
-    }
-  }
+	.listWrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .btn {
-  align-self: flex-start;
+	align-self: flex-start;
 }
