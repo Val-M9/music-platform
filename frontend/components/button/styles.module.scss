@@ -1,83 +1,81 @@
 @import '../../public/css/colors.scss';
 @import '../../public/css/quantities.scss';
+@import '../../public/css/mixins.scss';
 
 .btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  color: inherit;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  font-size: $fs-4;
-  font-weight: $fw-regular;
+	@include flex-full-center;
+	flex-direction: row;
+	width: 30px;
+	height: 30px;
+	background-color: transparent;
+	color: inherit;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: $fs-4;
+	font-weight: $fw-regular;
 
-  @media (min-width: $bp-medium) {
-    font-size: $fs-6;
-    font-weight: $fw-semi-bold;
-  }
+	@media (min-width: $bp-medium) {
+		font-size: $fs-6;
+		font-weight: $fw-semi-bold;
+	}
 
-  .icon {
-    width: 16px;
-    height: 16px;
+	.icon {
+		width: 16px;
+		height: 16px;
 
-    @media (min-width: $bp-medium) {
-      width: 20px;
-      height: 20px;
-    }
+		@media (min-width: $bp-medium) {
+			width: 20px;
+			height: 20px;
+		}
 
-    @media (min-width: $bp-large) {
-      width: 24px;
-      height: 24px;
-    }
-  }
+		@media (min-width: $bp-large) {
+			width: 24px;
+			height: 24px;
+		}
+	}
 
-  .withIcon {
-    padding-left: 5px;
-  }
+	.withIcon {
+		padding-left: 5px;
+	}
 
-  &[data-variant='rounded'] {
-    width: 30px;
-    height: 30px;
-    padding: 6px;
-    background-color: $violet-300;
-    border: 1px solid $violet-200;
-    border-radius: $radius-50;
+	&[data-variant='rounded'] {
+		width: 30px;
+		height: 30px;
+		padding: 6px;
+		background-color: $violet-300;
+		border: 1px solid $violet-200;
+		border-radius: $radius-50;
 
-    @media (min-width: $bp-medium) {
-      width: 40px;
-      height: 40px;
-      padding: 8px;
-    }
+		@media (min-width: $bp-medium) {
+			width: 40px;
+			height: 40px;
+			padding: 8px;
+		}
 
-    @media (min-width: $bp-large) {
-      width: 50px;
-      height: 50px;
-      padding: 10px;
-    }
-  }
+		@media (min-width: $bp-large) {
+			width: 50px;
+			height: 50px;
+			padding: 10px;
+		}
+	}
 
-  &[data-variant='filled'] {
-    width: fit-content;
-    padding: 5px 8px;
-    color: $green-700;
-    background-color: $violet-100;
-    border: 1px solid $violet-100;
-    border-radius: $radius-4;
-    box-shadow: 0px 0px 5px 2px $violet-200;
+	&[data-variant='filled'] {
+		width: fit-content;
+		padding: 5px 8px;
+		color: $green-700;
+		background-color: $violet-100;
+		border: 1px solid $violet-100;
+		border-radius: $radius-4;
+		box-shadow: 0px 0px 5px 2px $violet-200;
 
-    &:hover {
-      background-color: $violet-50;
-      box-shadow: 0px 0px 2px $violet-100;
-    }
+		&:hover {
+			background-color: $violet-50;
+			box-shadow: 0px 0px 2px $violet-100;
+		}
 
-    @media (min-width: $bp-medium) {
-      padding: 18px 14px;
-    }
-  }
+		@media (min-width: $bp-medium) {
+			padding: 18px 14px;
+		}
+	}
 }

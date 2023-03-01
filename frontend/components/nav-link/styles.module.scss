@@ -1,45 +1,44 @@
 @import '../../public/css/colors.scss';
 @import '../../public/css/quantities.scss';
+@import '../../public/css/mixins.scss';
 
 .link {
-  display: flex;
-  flex-direction: row;
-  margin-top: 40px;
-  margin-left: 20px;
-  font-size: $fs-6;
-  font-weight: $fw-light;
-  cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: $fs-6;
+	font-weight: $fw-light;
+	cursor: pointer;
 
-  @media (min-width: $bp-medium) {
-    margin-top: 40px;
-    margin-left: 30px;
-    font-size: $fs-8;
-    font-weight: $fw-regular;
+	@media (min-width: $bp-medium) {
+		margin-top: 40px;
+		margin-left: 30px;
+		font-size: $fs-8;
+		font-weight: $fw-regular;
+	}
 
-  }
-  
-  p {
-    display: inherit;
-    align-items: center;
+	p {
+		@include flex-align-center;
 
-    span {
-      display: inherit;
-      align-self: flex-end;
-      padding-left: 20px;
-    }
+		span {
+			display: inherit;
+			align-self: flex-end;
+			padding-left: 20px;
+		}
 
-    .icon {
-      width: 20px;
-      height: 20px;
+		.icon {
+			width: 20px;
+			height: 20px;
 
-      @media (min-width: $bp-medium) {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
+			@media (min-width: $bp-medium) {
+				width: 24px;
+				height: 24px;
+			}
+		}
+	}
 
-  &Active {
-    color: $violet-100;
-  }
+	&Active {
+		color: $violet-100;
+	}
 }

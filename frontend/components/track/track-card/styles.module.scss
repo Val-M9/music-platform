@@ -1,108 +1,108 @@
 @import '../../../public/css/colors.scss';
 @import '../../../public/css/quantities.scss';
+@import '../../../public/css/mixins.scss';
 
 .card {
-  display: flex;
-  margin-top: 30px;
-  width: 100%;
-  max-width: 900px;
-  height: 90px;
-  background-color: $green-300;
-  border: 1px solid $green-300;
-  border-radius: $radius-8;
-  box-shadow: 0px 0px 13px 2px $violet-500;
-  cursor: pointer;
-  
-  @media (min-width: $bp-large) {
-    height: 100px;
-    width: 100%;
-  }
+	display: flex;
+	margin-top: 30px;
+	width: 100%;
+	max-width: 900px;
+	height: 90px;
+	background-color: $green-300;
+	border: 1px solid $green-300;
+	border-radius: $radius-8;
+	box-shadow: 0px 0px 13px 2px $violet-500;
+	cursor: pointer;
 
-  .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 100%;
-    padding: 8px 10px;
-    
-    @media (min-width: $bp-medium){
-      padding: 10px 20px;
-    }
+	@media (min-width: $bp-large) {
+		height: 100px;
+		width: 100%;
+	}
 
-    img {
-      width: 100%;
-      height: 100%;
-      margin-left: 10px;
-      margin-right: 10px;
-      max-width: 40px;
-      max-height: 40px;
-      object-fit: cover;
+	.content {
+		@include flex-align-center;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
+		padding: 8px 10px;
 
-      @media (min-width: $bp-medium) {
-        margin-left: 20px;
-        margin-right: 20px;
-        max-width: 50px;
-        max-height: 50px;
-      }
-    }
-    
-    .trackInfo {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      height: 100%;
-      max-width: 500px;
-      width: 40%;
+		@media (min-width: $bp-medium) {
+			padding: 10px 20px;
+		}
 
-      @media (min-width: $bp-medium) {
-        width: 50%;
-      }
+		img {
+			width: 100%;
+			height: 100%;
+			margin-left: 10px;
+			margin-right: 10px;
+			max-width: 40px;
+			max-height: 40px;
+			object-fit: cover;
 
-      @media (min-width: $bp-large) {
-        width: 60%;
-      }
-      
-      h4 {
-        font-size: $fs-8;
-        font-weight: $fw-medium;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+			@media (min-width: $bp-medium) {
+				margin-left: 20px;
+				margin-right: 20px;
+				max-width: 50px;
+				max-height: 50px;
+			}
+		}
 
-        @media (min-width: $bp-medium){
-          font-size: $fs-12 ;
-        }
-      }
+		.trackInfo {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			height: 100%;
+			max-width: 500px;
+			width: 40%;
 
-      p {
-        font-size: $fs-4;
-        font-weight: $fw-light;
-        @media (min-width: $bp-medium){
-          font-size: $fs-6;
-          font-weight: $fw-regular;
-        }
-      }
-    }
+			@media (min-width: $bp-medium) {
+				width: 50%;
+			}
 
-    .additional {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: flex-end;
-      margin-left: auto;
-      height: 100%;
-      
-      .duration {
-        font-size: $fs-2;
-        font-weight: $fw-light;
+			@media (min-width: $bp-large) {
+				width: 60%;
+			}
 
-        @media (min-width: $bp-medium){
-          right: 20px;
-          bottom: 10px;
-          font-size: $fs-4;
-       }
-      }
-    }
-  }
+			h4 {
+				font-size: $fs-8;
+				font-weight: $fw-medium;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+
+				@media (min-width: $bp-medium) {
+					font-size: $fs-12;
+				}
+			}
+
+			p {
+				font-size: $fs-4;
+				font-weight: $fw-light;
+				@media (min-width: $bp-medium) {
+					font-size: $fs-6;
+					font-weight: $fw-regular;
+				}
+			}
+		}
+
+		.additional {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-end;
+			margin-left: auto;
+			height: 100%;
+
+			.duration {
+				font-size: $fs-2;
+				font-weight: $fw-light;
+
+				@media (min-width: $bp-medium) {
+					right: 20px;
+					bottom: 10px;
+					font-size: $fs-4;
+				}
+			}
+		}
+	}
 }
