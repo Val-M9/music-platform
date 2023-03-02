@@ -1,0 +1,59 @@
+@import '../../public/css/colors.scss';
+@import '../../public/css/quantities.scss';
+@import '../../public/css/mixins.scss';
+
+.wrapper {
+	margin-top: 50px;
+	width: 100%;
+
+	.stepper {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+
+		.step {
+			@include flex-align-center;
+			justify-content: space-around;
+			flex-direction: row;
+			position: relative;
+			flex-grow: 1;
+
+			.circle {
+				@include flex-full-center;
+				width: 30px;
+				height: 30px;
+				background-color: $green-700;
+				border-radius: 50%;
+				font-size: $fs-8;
+
+				@media (min-width: $bp-medium) {
+					width: 40px;
+					height: 40px;
+					font-size: $fs-12;
+				}
+			}
+
+			.active {
+				color: $violet-100;
+			}
+
+			.divider {
+				position: absolute;
+				right: -30%;
+				width: 60%;
+				border: 2px solid $light-gray;
+				border-radius: 3px;
+			}
+
+			&:last-child > .divider {
+				display: none;
+			}
+		}
+	}
+
+	.btnBlock {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 30px;
+	}
+}
