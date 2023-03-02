@@ -6,4 +6,5 @@ export type ButtonProps = {
 	variant?: 'rounded' | 'basic' | 'filled';
 	onClick: (props?: any) => void;
 	style?: string;
+	isDisabled?: boolean;
 };

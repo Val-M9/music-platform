@@ -39,13 +39,17 @@
 		padding-left: 5px;
 	}
 
+	&:hover {
+		color: $violet-50;
+	}
+
 	&[data-variant='rounded'] {
 		width: 30px;
 		height: 30px;
 		padding: 6px;
-		background-color: $violet-300;
-		border: 1px solid $violet-200;
+		background-color: $violet-500;
 		border-radius: $radius-50;
+		box-shadow: 0 0 4px $green-700;
 
 		@media (min-width: $bp-medium) {
 			width: 40px;
