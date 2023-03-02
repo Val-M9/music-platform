@@ -5,7 +5,7 @@ import { Track } from '../../common/types';
 import { Button, CommentForm, Layout, TrackDetails } from '../../components';
 import styles from './styles.module.scss';
 
-const TrackInfo: FC = () => {
+const TrackPage: FC = () => {
 	const track: Track = {
 		_id: '1',
 		name: 'Track1 trtdmfmldlskd skdnskd',
@@ -30,7 +30,7 @@ const TrackInfo: FC = () => {
 					title='Back'
 					Icon={ArrowLeft}
 					onClick={onGoBack}
-					style={styles.btn}
+					style={styles.backBtn}
 				/>
 				<TrackDetails track={track} />
 				<CommentForm />
@@ -39,4 +39,4 @@ const TrackInfo: FC = () => {
 	);
 };
 
-export default TrackInfo;
+export default TrackPage;
