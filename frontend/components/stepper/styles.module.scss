@@ -3,7 +3,6 @@
 @import '../../public/css/mixins.scss';
 
 .wrapper {
-	margin-top: 50px;
 	width: 100%;
 
 	.stepper {
@@ -20,6 +19,7 @@
 
 			.circle {
 				@include flex-full-center;
+				padding-top: 3px;
 				width: 30px;
 				height: 30px;
 				background-color: $green-700;

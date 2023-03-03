@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 const Header: FC<HeaderProps> = ({ onOpenDrawer }) => {
 	return (
 		<header className={styles.header}>
-			<Button Icon={Menu} onClick={onOpenDrawer} />
+			<Button IconRight={Menu} onClick={onOpenDrawer} />
 			<h1 className={styles.heading}>MusicPlatform</h1>
 		</header>
 	);

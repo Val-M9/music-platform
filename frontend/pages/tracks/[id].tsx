@@ -28,7 +28,7 @@ const TrackPage: FC = () => {
 				<Button
 					variant='filled'
 					title='Back'
-					Icon={ArrowLeft}
+					IconLeft={ArrowLeft}
 					onClick={onGoBack}
 					style={styles.backBtn}
 				/>

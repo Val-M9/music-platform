@@ -3,7 +3,8 @@ import { ButtonProps } from './types';
 import styles from './styles.module.scss';
 
 const Button: FC<ButtonProps> = ({
-	Icon,
+	IconLeft,
+	IconRight,
 	title,
 	onClick,
 	variant = 'basic',
@@ -18,8 +19,9 @@ const Button: FC<ButtonProps> = ({
 			data-variant={variant}
 			disabled={isDisabled}
 		>
-			{Icon && <Icon className={styles.icon} />}
-			{title && <p className={Icon ? styles.withIcon : ''}>{title}</p>}
+			{IconLeft && <IconLeft className={styles.icon} />}
+			{title && <p className={IconLeft || IconRight ? styles.withIcon : ''}>{title}</p>}
+			{IconRight && <IconRight className={styles.icon} />}
 		</button>
 	);
 };

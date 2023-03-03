@@ -29,7 +29,7 @@ const TrackCard: FC<TrackCardProps> = ({ track, active = false }) => {
 				<Button
 					onClick={(e) => onPlayPauseTrack(e)}
 					variant='rounded'
-					Icon={active ? Pause : Play}
+					IconRight={active ? Pause : Play}
 				/>
 				<img src={track.picture} alt='' />
 				<div className={styles.trackInfo}>
@@ -37,7 +37,7 @@ const TrackCard: FC<TrackCardProps> = ({ track, active = false }) => {
 					<p>{track.artist}</p>
 				</div>
 				<div className={styles.additional}>
-					<Button onClick={(e) => onDeleteTrack(e)} Icon={Trash} />
+					<Button onClick={(e) => onDeleteTrack(e)} IconRight={Trash} />
 					<div className={styles.duration}>
 						<span>02:55 / </span>
 						<span>03:06</span>
