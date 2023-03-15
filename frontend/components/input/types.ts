@@ -4,7 +4,7 @@ export type InputProps = React.HTMLProps<HTMLInputElement>;
 export type TextAreaProps = React.HTMLProps<HTMLTextAreaElement>;
 
 export type FileInputProps = {
-	setFile: (file: File) => void;
+	setFile: Function;
 	accept: string;
 	children: ReactNode;
 };

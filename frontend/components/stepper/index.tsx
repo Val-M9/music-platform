@@ -18,8 +18,8 @@ const Stepper: FC<StepperProps> = ({ steps, activeStep, onStepBack, onStepForwar
 				))}
 			</div>
 			<div className={styles.btnBlock}>
-				<Button onClick={onStepBack} Icon={ChevronLeft} isDisabled={activeStep == 1} />
-				<Button onClick={onStepForward} Icon={ChevronRight} isDisabled={activeStep == 3} />
+				<Button onClick={onStepBack} IconRight={ChevronLeft} isDisabled={activeStep == 1} />
+				<Button onClick={onStepForward} IconRight={ChevronRight} isDisabled={activeStep == 3} />
 			</div>
 		</div>
 	);
