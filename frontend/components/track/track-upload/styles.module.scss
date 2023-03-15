@@ -1,0 +1,56 @@
+@import '../../../public/css/colors.scss';
+@import '../../../public/css/quantities.scss';
+@import '../../../public/css/mixins.scss';
+
+.wrapper {
+	position: relative;
+	width: 90%;
+	min-height: 370px;
+	margin-top: 40px;
+	padding: 20px 35px;
+	background-color: $green-600;
+	border-radius: $radius-8;
+	box-shadow: 0px 7px 15px 3px $violet-500;
+
+	@media (min-width: $bp-small) {
+		min-height: 420px;
+	}
+
+	@media (min-width: $bp-medium) {
+		min-height: 470px;
+	}
+
+	@media (min-width: $bp-large) {
+		width: 60%;
+	}
+
+	h2 {
+		@include flex-justify-center;
+	}
+
+	& > button {
+		position: absolute;
+		bottom: 20px;
+		right: 35px;
+	}
+}
+
+.content {
+	padding-top: 30px;
+
+	@media (min-width: $bp-medium) {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.fileTitle {
+		padding-top: 20px;
+		font-size: $fs-6;
+
+		@media (min-width: $bp-medium) {
+			padding-top: 10px;
+			padding-left: 20px;
+			font-size: $fs-10;
+		}
+	}
+}
