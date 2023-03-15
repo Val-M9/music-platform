@@ -6,7 +6,7 @@ const Button: FC<ButtonProps> = ({
 	IconLeft,
 	IconRight,
 	title,
-	onClick,
+	onClick = () => {},
 	variant = 'basic',
 	style,
 	isDisabled,

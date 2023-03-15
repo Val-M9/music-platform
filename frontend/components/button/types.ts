@@ -5,7 +5,7 @@ export type ButtonProps = {
 	IconRight?: Icon;
 	title?: string;
 	variant?: 'rounded' | 'basic' | 'filled';
-	onClick: (props?: any) => void;
+	onClick?: (props?: any) => void;
 	style?: string;
 	isDisabled?: boolean;
 };

@@ -5,6 +5,6 @@ export type TextAreaProps = React.HTMLProps<HTMLTextAreaElement>;
 
 export type FileInputProps = {
 	setFile: Function;
-	accept: string;
+	accept: 'audio/*' | 'image/*';
 	children: ReactNode;
 };
