@@ -46,7 +46,7 @@ const Tracks: FC = () => {
 			<div className={styles.wrapper}>
 				<PageHeading
 					heading='List Of Tracks'
-					title='Create Track'
+					title='Upload Track'
 					onClick={() => router.push(Routes.CREATE_TRACK)}
 					variant='filled'
 				/>
